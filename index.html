@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neosmith AI Labs| Recursive Intelligence</title>
+    <style>
+        /* CSS Variables for easy theming */
+        :root {
+            --bg-color: #000000;     /* Black background */
+            --text-color: #ffffff;   /* White text */
+            --accent-color: #333333; /* Dark gray for borders */
+            /* A clean, modern sans-serif font stack */
+            --font-main: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        /* Reset basic elements */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased; /* Smoother fonts on Mac */
+        }
+
+        /* Main Container - Centers content and sets max width */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            min-height: 100vh; /* Ensures footer stays low on short pages */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navigation Header */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--accent-color);
+            margin-bottom: auto; /* Pushes content below down */
+        }
+
+        .logo {
+            font-weight: 800; /* Extra bold for the company name */
+            font-size: 1.3rem;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: 2.5rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            opacity: 1;
+        }
+
+        /* Hero Section (The main banner) */
+        .hero {
+            padding: 6rem 0;
+        }
+
+        /* Big Headline */
+        h1 {
+            font-size: clamp(3.5rem, 9vw, 7rem); /* Responsive sizing */
+            font-weight: 600;
+            letter-spacing: -0.04em;
+            line-height: 0.95;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Subtext describing what you do */
+        .hero-text {
+            font-size: 1.6rem;
+            max-width: 700px;
+            font-weight: 300; /* Thinner weight for contrast against headline */
+            opacity: 0.9;
+            line-height: 1.4;
+        }
+
+        /* Three-Column Grid Section */
+        .section-grid {
+            display: grid;
+            /* Creates columns that automatically wrap on smaller screens */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            padding: 4rem 0;
+            border-top: 1px solid var(--accent-color);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .card p {
+            font-size: 1.05rem;
+            color: #999; /* Slightly lighter text for description */
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            border: 1px solid var(--text-color);
+            color: var(--text-color);
+            padding: 0.8rem 1.8rem;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: var(--text-color);
+            color: var(--bg-color); /* Inverts colors on hover */
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto; /* Pushes to bottom */
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            border-top: 1px solid var(--accent-color);
+            font-size: 0.85rem;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Mobile Responsive Adjustments */
+        @media (max-width: 768px) {
+            .container { padding: 1.5rem; }
+            .hero { padding: 4rem 0; }
+            h1 { font-size: 3.5rem; }
+            .hero-text { font-size: 1.2rem; }
+            /* Hide desktop nav links on mobile for simplicity */
+            .nav-links { display: none; } 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">NEOSMITH AI</div>
+            <!-- <div class="nav-links">
+                <a href="#">Architecture</a>
+                <a href="#">Efficiency</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div> -->
+        </nav>
+
+        <section class="hero">
+            <h1>Neo.<br>Smith AI.</h1>
+            
+            <p class="hero-text">
+                We engineer self-reinforcing loops between Agents and LLMs. 
+                A symbiotic architecture where systems teach each other—maximizing 
+                capability while minimizing cost.
+            </p>
+        </section>
+
+        <div class="section-grid">
+            <div class="card">
+                <h3>The Symbiotic Loop</h3>
+                <p>Our core architecture allows Agents to curate high-value data for LLMs, 
+                while LLMs refine Agent logic in real-time. A continuous cycle of improvement.</p>
+                <!-- <a href="#" class="btn">View Architecture</a> -->
+            </div>
+            <div class="card">
+                <h3>Cost Efficiency</h3>
+                <p>Smarter agents require fewer tokens. Our mutual learning loops distill context to its essence, drastically reducing LLM inference costs and the total operational expense of the system.</p>
+                <!-- <a href="#" class="btn">Read Case Study</a> -->
+            </div>
+            <div class="card">
+                <h3>Autonomous Evolution</h3>
+                <p>We build systems that don't just execute commands, but evolve their capabilities. 
+                The next generation of self-correcting software.</p>
+                <!-- <a href="#" class="btn">Request Access</a> -->
+            </div>
+        </div>
+
+        <footer>
+            <!-- <div>&copy; 2024 Neosmith, Inc.</div> -->
+            <div>Building in stealth.</div>
+        </footer>
+    </div>
+
+</body>
+</html>
